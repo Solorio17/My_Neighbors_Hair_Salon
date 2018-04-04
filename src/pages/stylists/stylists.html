@@ -1,0 +1,16 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Stylists</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list *ngFor="let stylist of stylists">
+    <ion-item>
+      {{stylist.name}} ({{stylist.age}})
+    </ion-item>
+  </ion-list>
+</ion-content>
