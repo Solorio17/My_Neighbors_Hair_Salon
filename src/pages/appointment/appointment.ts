@@ -1,25 +1,18 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { NavController} from 'ionic-angular';
+import { StylistsPage } from "../stylists/stylists"
 
-/**
- * Generated class for the AppointmentPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
-@IonicPage()
 @Component({
   selector: 'page-appointment',
   templateUrl: 'appointment.html',
 })
 export class AppointmentPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad AppointmentPage');
+  onLoadStylists(){
+    this.navCtrl.push(StylistsPage)
   }
-
 }
