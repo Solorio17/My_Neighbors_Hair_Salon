@@ -9,6 +9,7 @@ import { HomePage } from '../pages/home/home';
 import { AppointmentPage } from '../pages/appointment/appointment';
 import { StylistsPage } from "../pages/stylists/stylists"
 import { StylistPage } from "../pages/stylists/stylist/stylist";
+import stylists from '../pages/stylists/stylist/stylist';
 
 @NgModule({
   declarations: [
