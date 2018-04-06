@@ -9,7 +9,7 @@
 
 <ion-content padding>
   <ion-list *ngFor="let stylist of stylists">
-    <ion-item>
+    <ion-item (click)="onLoadStylist()">
       {{stylist.name}} ({{stylist.age}})
     </ion-item>
   </ion-list>
