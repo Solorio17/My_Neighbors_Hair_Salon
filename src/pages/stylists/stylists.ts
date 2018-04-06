@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {NavController,} from 'ionic-angular';
+import { NavController } from 'ionic-angular';
+import { StylistPage } from "./stylist/stylist";
 
 @Component({
   selector: 'page-stylists',
@@ -36,6 +37,8 @@ export class StylistsPage {
   constructor(public navCtrl: NavController) {
   }
 
-
+  onLoadStylist(){
+    this.navCtrl.push(StylistPage)
+  }
 
 }
