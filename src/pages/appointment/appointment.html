@@ -12,20 +12,15 @@
 <ion-content padding>
   <h2 text-right><button id="chooses" (click)="onLoadStylists()">Choose Your Stylist <ion-icon name="arrow-forward"></ion-icon></button></h2>
 
-  <div id="calendar">
-    This is expected to hold a calendar in the near future
-  </div>
+  <ion-list>
+    <ion-item>
+      <ion-label>Choose Date</ion-label>
+      <ion-datetime [(ngModel)]="date"  displayFormat="MMMM DD, YYYY" min="2018" max="2027"></ion-datetime>
+    </ion-item>
 
-  <div id="times">
-    Hold all available times for making appointments here
-  </div>
-
-  <div id="summary" text-center>
-    Summary of Appointment
-  </div>
-
-  <div id="confirm" text-center>
-    Confirm Appointment
-  </div>
-
+    <ion-item>
+      <ion-label>Choose Time</ion-label>
+      <ion-datetime [(ngModel)]="date" displayFormat="HH:mm A" pickerFormat="h mm A"></ion-datetime>
+    </ion-item>
+  </ion-list>
 </ion-content>
