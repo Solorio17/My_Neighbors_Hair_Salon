@@ -1,5 +1,5 @@
 import { Component} from '@angular/core';
-import { NavController} from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
 import { StylistsPage } from "../stylists/stylists"
 
 
@@ -10,13 +10,18 @@ import { StylistsPage } from "../stylists/stylists"
 export class AppointmentPage {
   public date: String
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public modal: ModalController) {
     let aDate = new Date();
     aDate.setHours(aDate.getHours() - (aDate.getTimezoneOffset() / 60))
     this.date = aDate.toISOString();
   }
 
-  onLoadStylists(){
-    this.navCtrl.push(StylistsPage)
+  stylistsModal(){
+    const myModal = this.modal.create(StylistsPage)
+
+    myModal.present();
   }
+
+
+
 }

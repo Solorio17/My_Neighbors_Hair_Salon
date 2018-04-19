@@ -2,15 +2,21 @@
 
   <ion-navbar>
     <ion-title>Stylists</ion-title>
+    <ion-buttons end>
+      <button id="close" ion-button small (click)="closeModal()">Close</button>
+    </ion-buttons>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <ion-list *ngFor="let stylist of stylists">
-    <ion-item (click)="onLoadStylist()">
-      {{stylist.name}} ({{stylist.age}})
+
+  <ion-list radio-group>
+    <ion-item *ngFor="let stylist of stylists">
+      <ion-label>{{stylist.name}}</ion-label>
+      <ion-radio></ion-radio>
     </ion-item>
   </ion-list>
+
 </ion-content>
