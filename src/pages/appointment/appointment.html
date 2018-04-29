@@ -1,0 +1,26 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+      <h6> <ion-icon name="calendar"></ion-icon> Schedule Appointment</h6>
+    </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h2 text-right><button id="chooses" (click)="stylistsModal()">Choose Your Stylist <ion-icon name="arrow-forward"></ion-icon></button></h2>
+
+  <ion-list>
+    <ion-item>
+      <ion-label>Choose Date</ion-label>
+      <ion-datetime [(ngModel)]="date"  displayFormat="MMMM DD, YYYY" min="2018" max="2027"></ion-datetime>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Choose Time</ion-label>
+      <ion-datetime [(ngModel)]="date" displayFormat="HH:mm A" pickerFormat="h mm A"></ion-datetime>
+    </ion-item>
+  </ion-list>
+</ion-content>

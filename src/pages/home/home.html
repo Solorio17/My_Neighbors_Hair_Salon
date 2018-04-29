@@ -1,14 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      <ion-icon name="home"> Home</ion-icon>
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <h2 text-center>Welcome!</h2>
+  <p text-center>Would you like to schedule an appointment? Click the button below.</p>
+
+  <button ion-button block (click)="onLoadAppt()">Make an Appointment</button>
 </ion-content>

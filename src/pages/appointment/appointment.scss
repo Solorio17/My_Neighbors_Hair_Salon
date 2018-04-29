@@ -1,0 +1,37 @@
+page-appointment {
+  #chooses{
+    background-color: white;
+    color: #488aff;
+  }
+
+  #calendar{
+    border: 2px solid black;
+    width: 345px;
+    height: 250px;
+    margin-bottom: 5px;
+  }
+
+  #times{
+    border: 2px solid black;
+    width: 345px;
+    height: 75px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+  }
+
+  #summary{
+    border: 2px solid black;
+    width: 345px;
+    height: 240px;
+    margin-bottom: 5px;
+  }
+
+  #confirm{
+    border: 2px solid black;
+    width: 345px;
+    height: 65px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+  }
+
+}
